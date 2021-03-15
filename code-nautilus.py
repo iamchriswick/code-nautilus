@@ -45,7 +45,7 @@ class VSCodeExtension(GObject.GObject, Nautilus.MenuProvider):
     def get_file_items(self, window, files):
         item = Nautilus.MenuItem(
             name='VSCodeOpen',
-            label='Open in ' + VSCODENAME,
+            label='Edit in ' + VSCODENAME,
             tip='Opens the selected files with VSCode'
         )
         item.connect('activate', self.launch_vscode, files)
